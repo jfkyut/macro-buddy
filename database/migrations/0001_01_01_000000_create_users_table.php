@@ -17,6 +17,10 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('target_calories')->nullable();
+            $table->string('target_protein_g')->nullable();
+            $table->string('target_carbs_g')->nullable();
+            $table->string('target_fat_g')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
